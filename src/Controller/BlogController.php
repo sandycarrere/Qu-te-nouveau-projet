@@ -8,20 +8,18 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
-     * @Route("/blog", name="blog_")
-    */
+ * @Route("/blog", name="blog_")
+*/
 
 class BlogController extends AbstractController
 {
-     /**
-     * @Route("/", name="index")
+    /**
+    * @Route("/", name="index")
     */
     public function index()
     {
         
-     return $this->render('blog/index.html.twig', [
-        'owner' => 'Thomas',
-]);
+        return $this->render('blog/index.html.twig', ['owner' => 'Thomas']);
     }
     /**
      * @Route("/show/{slug}",

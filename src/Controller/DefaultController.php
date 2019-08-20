@@ -10,9 +10,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends AbstractController
 {
-        /**
-     * @Route("/blog", name="index")
-    */
+ /**
+* @Route("/blog", name="index")
+*/
     public function index()
     {
      
